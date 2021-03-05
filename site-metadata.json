@@ -1,76 +1,76 @@
 {
-    "layout_style": "overflow",
-    "palette": "blue",
-    "header": {
-        "title": "Michael R.",
-        "tagline": "Web/App Developer, Data Analyst, Beta Tester, Entrepreneur, Small Business Owner, Blogger, Security & Privacy Advocate",
-        "profile_img": "https://res.cloudinary.com/practicaldev/image/fetch/s--9h8J63Ee--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497515/85abf111-5f97-462e-8e83-fe46b3be008b.jpeg",
-        "profile_img_alt": "Author avatar",
-        "background": "dark",
-        "has_nav": true,
-        "nav_links": [
-            {
-                "label": "Home",
-                "url": "/",
-                "style": "link"
-            },
-            {
-                "label": "Blog",
-                "url": "/blog/",
-                "style": "link"
-            },
-            {
-                "label": "Style Guide",
-                "url": "/style-guide/",
-                "style": "link"
-            },
-            {
-                "label": "About",
-                "url": "/about/",
-                "style": "link"
-            },
-            {
-                "label": "Contact",
-                "url": "/contact/",
-                "style": "link"
-            }
-        ],
-        "has_social": true,
-        "social_links": [
-            {
-                "label": "Twitter",
-                "url": "https://twitter.com/killsh0t13",
-                "style": "icon",
-                "icon_class": "twitter",
-                "new_window": true
-            },
-            {
-                "label": "GitHub",
-                "url": "https://github.com/killshot13",
-                "style": "icon",
-                "icon_class": "github",
-                "new_window": true
-            },
-            {
-                "label": "DEV",
-                "url": "https://dev.to/killshot13",
-                "style": "icon",
-                "icon_class": "dev",
-                "new_window": true
-            }
-        ]
-    },
-    "footer": {
-        "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
-        "links": [
-            null,
-            {
-                "label": "Generated from DEV",
-                "url": "https://dev.to/connecting-with-stackbit",
-                "new_window": true,
-                "style": "link"
-            }
-        ]
-    },
-    "title": "Stackbit Fresh Theme"
+  "layout_style": "overflow",
+  "palette": "green",
+  "header": {
+    "title": "Michael R.",
+    "tagline": "Web/App Developer, Data Analyst, Beta Tester, Entrepreneur, Small Business Owner, Blogger, Security & Privacy Advocate",
+    "profile_img": "https://res.cloudinary.com/practicaldev/image/fetch/s--9h8J63Ee--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497515/85abf111-5f97-462e-8e83-fe46b3be008b.jpeg",
+    "profile_img_alt": "Author avatar",
+    "background": "dark",
+    "has_nav": true,
+    "nav_links": [
+      {
+        "label": "Home",
+        "url": "/",
+        "style": "link"
+      },
+      {
+        "label": "Blog",
+        "url": "/blog/",
+        "style": "link"
+      },
+      {
+        "label": "Portfolio",
+        "url": "/portfolio/",
+        "style": "link"
+      },
+      {
+        "label": "About",
+        "url": "/about/",
+        "style": "link"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact/",
+        "style": "link"
+      }
+    ],
+    "has_social": true,
+    "social_links": [
+      {
+        "label": "Twitter",
+        "url": "https://twitter.com/killsh0t13",
+        "style": "icon",
+        "icon_class": "twitter",
+        "new_window": true
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/killshot13",
+        "style": "icon",
+        "icon_class": "github",
+        "new_window": true
+      },
+      {
+        "label": "DEV",
+        "url": "https://dev.to/killshot13",
+        "style": "icon",
+        "icon_class": "dev",
+        "new_window": true
+      }
+    ]
+  },
+  "footer": {
+    "content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
+    "links": [
+      null,
+      {
+        "label": "Generated from DEV",
+        "url": "https://dev.to/connecting-with-stackbit",
+        "new_window": true,
+        "style": "link"
+      }
+    ]
+  },
+  "title": "Stackbit Fresh Theme"
 }
