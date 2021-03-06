@@ -1,4 +1,4 @@
 window.onGatsbyPreRouteUpdate = function () {
-  window.removeMainNavigationHandlers();
-  window.removeVideoEmbedsHandlers();
-};
+	window.removeMainNavigationHandlers()
+	window.removeVideoEmbedsHandlers()
+}
