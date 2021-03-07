@@ -2,8 +2,8 @@
 	"layout_style": "overflow",
 	"palette": "#BAEDA5",
 	"header": {
-		"title": "Michael R.",
-		"tagline": "Web/App Developer, Data Analyst, Beta Tester, Entrepreneur, Small Business Owner, Blogger, Security & Privacy Advocate",
+		"title": "Michael Rehnert",
+		"tagline": "Full-Stack Web Developer | Data Analyst | Blogger | White-Hat Hacker | Entrepreneur | USAF Veteran",
 		"profile_img": "https://res.cloudinary.com/practicaldev/image/fetch/s--9h8J63Ee--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497515/85abf111-5f97-462e-8e83-fe46b3be008b.jpeg",
 		"profile_img_alt": "Author avatar",
 		"background": "dark",
@@ -38,17 +38,24 @@
 		"has_social": true,
 		"social_links": [
 			{
-				"label": "Twitter",
-				"url": "https://twitter.com/killsh0t13",
-				"style": "icon",
-				"icon_class": "twitter",
-				"new_window": true
-			},
-			{
 				"label": "GitHub",
 				"url": "https://github.com/killshot13",
 				"style": "icon",
 				"icon_class": "github",
+				"new_window": true
+			},
+			{
+				"label": "LinkedIn",
+				"url": "https://www.linkedin.com/in/dmrehnert",
+				"style": "icon",
+				"icon_class": "linkedin",
+				"new_window": true
+			},
+			{
+				"label": "Twitter",
+				"url": "https://twitter.com/killsh0t13",
+				"style": "icon",
+				"icon_class": "twitter",
 				"new_window": true
 			},
 			{
@@ -72,5 +79,5 @@
 			}
 		]
 	},
-	"title": "Stackbit Fresh Theme"
+	"title": "Michael Rehnert: Full-Stack Web Developer"
 }
