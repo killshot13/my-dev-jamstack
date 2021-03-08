@@ -65,7 +65,6 @@ export default class Body extends React.Component {
 							)
 						}
 					)}
-					<link href='https://use.typekit.net/hye7dbv.css' rel='stylesheet' />
 					{_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
 						<link
 							rel='icon'

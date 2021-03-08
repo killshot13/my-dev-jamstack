@@ -1,30 +1,39 @@
+@charset "utf-8";
+
+@import url("https://use.typekit.net/hye7dbv.css");
+
 // Font.
-$font: (
-  primary: (
-    "Roboto",
-    Helvetica,
-    sans-serif,
-  ),
-  monospace: (
-    Consolas,
-    Monaco,
-    "Andale Mono",
-    "Ubuntu Mono",
-    monospace,
-  ),
+$font: (primary: ("Paralucent",
+    sans-serif),
+  text: ("Paralucent Text",
+    sans-serif),
+  accent: ("Paralucent Stencil"
+    sans-serif),
+  monospace: ("Fira Mono",
+    monospace),
 );
 
 // Palette.
-$palette: (
-  primary: #555e69,
-  secondary: darken(#555e69, 15%),
-  meta: lighten(#555e69, 25%),
-  border: lighten(#555e69, 55%),
-  bg: lighten(#555e69, 60%),
-  accent: #1de2bc,
+$palette: (primary: #5E8CA7,
+  secondary: darken(#5E8CA7, 15%),
+  meta: lighten(#5E8CA7, 25%),
+  border: lighten(#5E8CA7, 55%),
+  bg: lighten(#5E8CA7, 60%),
+  accent: #1CEDCA,
   accent-blue: #10bcf9,
   accent-violet: #9371e6,
   accent-orange: #fc6e51,
+  glow10: #B0FBBC,
+  glow20: #82F9A1,
+  sth10: #BAEDA5,
+  sth20: #1CEDCA,
+  text10: #ECF8FF,
+  text20: #CDE2F0,
+  blue10: #111A20,
+  blue20: #1C2C35,
+  blue30: #243B4A,
+  blue40: #416883,
+  blue50: #5E8CA7,
 );
 
 @import "imports/functions";
