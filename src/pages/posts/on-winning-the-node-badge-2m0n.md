@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--IQGV29YR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3ongx7g58br8kxelasq1.png
 comments_count: 0
-positive_reactions_count: 0
+positive_reactions_count: 2
 tags:
   - discuss
   - webdev

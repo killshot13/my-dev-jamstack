@@ -2,9 +2,9 @@
  * Site Header
  */
 .site-header {
-  background: #fff;
+  background: _palette(blue20);
   border-bottom: 1px solid _palette(border);
-  color: _palette(primary);
+  color: _palette(text20);
 }
 
 .site-header-inside {
