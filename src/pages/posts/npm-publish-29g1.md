@@ -10,6 +10,7 @@ positive_reactions_count: 4
 tags:
   - npm
   - tutorial
+  - productivity
 canonical_url: 'https://medium.com/@sth13/npm-publish-a8a879938eaf'
 template: post
 ---
@@ -240,7 +241,9 @@ npm publish my-package --otp=811486
 
 I hope you enjoyed this article. Feel free to add suggestions or ask questions in the comments below, and I will get back to you. Thank you for reading, and happy coding!
 
- -- killshot13
+Don't forget to 💖 this article and leave a 💭. If you're feeling extra generous, please click my name below to 🎆subscribe🎇!
+
+  -- killshot13
 
 ---
 
@@ -249,8 +252,6 @@ I hope you enjoyed this article. Feel free to add suggestions or ask questions i
 
 
 ---
-
-If you found this article useful, please ❤ and share it!
 
 *[This post is also available on DEV.](https://dev.to/killshot13/npm-publish-29g1)*
 

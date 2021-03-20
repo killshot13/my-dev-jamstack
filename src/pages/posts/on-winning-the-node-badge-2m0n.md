@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--IQGV29YR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3ongx7g58br8kxelasq1.png
 comments_count: 0
-positive_reactions_count: 2
+positive_reactions_count: 3
 tags:
   - discuss
   - webdev
@@ -45,6 +45,8 @@ I look forward to writing more quality articles that each of you will enjoy and 
 Thanks again! 🤗🤗🤗
 
   -- killshot13
+
+---
 
 
 <iframe class="liquidTag" src="https://dev.to/embed/user?args=killshot13" style="border: 0; width: 100%;"></iframe>

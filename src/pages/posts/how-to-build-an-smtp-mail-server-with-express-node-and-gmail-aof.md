@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--U2LLP4Iw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/de3p75v2w0yfb2sxcgpy.jpg
 comments_count: 5
-positive_reactions_count: 225
+positive_reactions_count: 226
 tags:
   - tutorial
   - node
@@ -401,7 +401,7 @@ We’ve successfully created an SMTP Email Server using Express and Node. We als
 
 Feel free to clone the source code and explore your own methods of implementation. I hope you have found this tutorial useful, and thank you for taking the time to follow along!
 
-Please don't forget to 💖 this article and leave a 💭. If you're feeling extra generous, click my name below so I get that 🎆subscribe🎇 notification!
+Don't forget to 💖 this article and leave a 💭. If you're feeling extra generous, please click my name below to 🎆subscribe🎇!
 
   -- killshot13
 
@@ -412,9 +412,6 @@ Please don't forget to 💖 this article and leave a 💭. If you're feeling ext
 
 
 ---
-
-> _This article was originally published and featured on the
-> [daily.dev blog](https://daily.dev). Here is [the canonical link](https://daily.dev/blog/how-to-build-an-smtp-mail-server-with-express-node-and-gmail) to the original._
 
 
 

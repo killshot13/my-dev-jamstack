@@ -49,7 +49,7 @@ You can [create a site](https://app.stackbit.com/create?theme=https://github.com
 
 1. Run the following command to assign this key to `STACKBIT_API_KEY` environment variable:
 
-        export STACKBIT_API_KEY={stackbit_api_key}
+        export STACKBIT_API_KEY=""
 
 1. Run the following command to fetch additional site contents from Stackbit if needed:
 
