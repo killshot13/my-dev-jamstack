@@ -1,5 +1,5 @@
 ---
-title: Home
+title: M. Rehnert > Full-Stack Web Developer > Portfolio & Blog
 hide_title: true
 sections:
   - section_id: hero
@@ -26,17 +26,17 @@ sections:
         url: blog/index.html
         style: button
 seo:
-  title: M. Rehnert > Full-Stack Web Developer > Portfolio & Blog
-  description: Articles, tutorials, and samples of open-source code for websites and software. Authored, designed, and published by Michael Rehnert.
+  title: Code. Develop. Engineer.
+  description: My Projects and Tutorials > A Curated Portfolio To Inspire and Educate > by Michael Rehnert | Full-Stack Web Developer | Author | Entepreneur
   extra:
     - name: "og:type"
       value: website
       keyName: property
     - name: "og:title"
-      value: M. Rehnert > Full-Stack Web Developer > Portfolio & Blog
+      value: Code. Develop. Enginner.
       keyName: property
     - name: "og:description"
-      value: Articles, tutorials, and samples of open-source code for websites and software. Authored, designed, and published by Michael Rehnert.
+      value: My Projects and Tutorials > A Curated Portfolio To Inspire and Educate > by Michael Rehnert | Full-Stack Web Developer
       keyName: property
     - name: "og:image"
       value: images/rehnert.co-OGimg.svg
@@ -46,9 +46,9 @@ seo:
       value: images/rehnert.co-twitter-card.png
       relativeUrl: true
     - name: "twitter:title"
-      value: M. Rehnert | Web Developer | Portfolio & Blog
+      value: Code. Develop. Enginner.
     - name: "twitter:description"
-      value: Articles, tutorials, and samples of open-source code for websites and software by M. Rehnert.
+      value: My Projects and Tutorials > A Curated Portfolio To Inspire and Educate > by Michael Rehnert | Full-Stack Web Developer | Author | Entepreneur
     - name: "twitter:image"
       value: images/rehnert.co-twitter-card.svg
       relativeUrl: true
