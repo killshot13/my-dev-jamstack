@@ -3,38 +3,27 @@
 @import url("https://use.typekit.net/hye7dbv.css");
 
 // Font.
-$font: (primary: ("Paralucent",
+$font: (head: ("Paralucent",
     sans-serif),
-  text: ("Paralucent Text",
+  body: ("Paralucent Text",
     sans-serif),
-  accent: ("Paralucent Stencil"
-    sans-serif),
-  monospace: ("Fira Mono",
+  mono: ("Fira Mono",
     monospace),
 );
 
 // Palette.
-$palette: (primary: #5E8CA7,
-  secondary: darken(#5E8CA7, 15%),
-  meta: lighten(#5E8CA7, 25%),
-  border: lighten(#5E8CA7, 55%),
-  bg: lighten(#5E8CA7, 60%),
+$palette: (primary: #111A20,
+  secondary: #1C2C35,
+  meta: #243B4A,
+  border: #416782,
   accent: #1CEDCA,
+  acchyp: #BAEDA5,
   accent-blue: #10bcf9,
   accent-violet: #9371e6,
   accent-orange: #fc6e51,
-  glow10: #B0FBBC,
-  glow20: #82F9A1,
-  sth10: #BAEDA5,
-  sth20: #1CEDCA,
-  text10: #ECF8FF,
-  text20: #CDE2F0,
-  blue10: #111A20,
-  blue20: #1C2C35,
-  blue30: #243B4A,
-  blue40: #416883,
-  blue50: #5E8CA7,
-);
+  txth10: #ECF8FF,
+  txtp20: #CDE2F0,
+  txtmet: #7AB6D9);
 
 @import "imports/functions";
 @import "imports/reset";
