@@ -1,5 +1,5 @@
 /**
- * Posts adn Pages
+ * Posts and Pages
  */
 .post {
   margin-bottom: 3.33333em;
@@ -38,7 +38,7 @@
 }
 
 .post-meta {
-  color: _palette(meta);
+  color: _palette(mettxt);
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.5;
@@ -69,10 +69,12 @@
   flex-direction: column;
   margin-bottom: 1.66667em;
   width: 50%;
+  padding-top: 1.33333em;
+  padding-bottom: 1.33333em;
 
   .post-inside {
     border: 1px solid _palette(border);
-    border-radius: 5px;
+    border-radius: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -90,7 +92,7 @@
 
   .post-thumbnail {
     border: 0;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
     display: block;
     margin: 0;
     position: relative;
@@ -103,7 +105,7 @@
     }
 
     img {
-      border-radius: 5px 5px 0 0;
+      border-radius: 10px 10px 0 0;
       height: 100%;
       left: 0;
       object-fit: cover;
@@ -164,7 +166,7 @@
 }
 
 @media only screen and (min-width: 801px) and (max-width: 1000px),
-  only screen and (max-width: 600px) {
+only screen and (max-width: 600px) {
   .post-card {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;

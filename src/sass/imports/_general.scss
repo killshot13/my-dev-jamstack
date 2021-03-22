@@ -8,15 +8,15 @@ html {
 }
 
 body {
-  font-family: _font(text);
-  background: _palette(blue10);
-  color: _palette(text20);
+  font-family: _font(body);
+  background: _palette(primary);
+  color: _palette(txtp20);
   line-height: 1.66667;
 }
 
 a {
-  border-bottom: 2px solid _palette(accent);
-  color: _palette(secondary);
+  border-bottom: 1px solid _palette(acchyp);
+  color: _palette(acchyp);
   text-decoration: none;
   -webkit-transition: border 0.3s ease, color 0.3s ease;
   transition: border 0.3s ease, color 0.3s ease;
@@ -33,12 +33,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: _font(primary);
-  color: _palette(text20);
-  font-weight: bold;
+  font-family: _font(head);
+  color: _palette(txth10);
+  font-weight: 500;
   line-height: 1.2;
   margin: 1.66667rem 0 0.83333rem;
   text-rendering: optimizeLegibility;
+  text-transform: uppercase;
 
   &:first-child {
     margin-top: 0;
@@ -91,13 +92,14 @@ ins {
 code,
 pre {
   font-family: _font(monospace);
+  font-weight: normal;
   font-size: 0.88889rem;
 }
 
 pre {
   background-color: _palette(bg);
   border: 1px solid _palette(border);
-  border-radius: 5px;
+  border-radius: 10px;
   color: _palette(secondary);
   margin: 1.66667rem 0;
   overflow: auto;
@@ -133,7 +135,7 @@ blockquote {
 
   small,
   cite {
-    color: _palette(meta);
+    color: _palette(txtmet);
     display: block;
     font-size: 0.52941em;
     font-style: normal;
@@ -187,7 +189,7 @@ table {
 }
 
 caption {
-  color: _palette(meta);
+  color: _palette(txtmet);
   font-size: 0.88889rem;
   font-style: normal;
   margin-bottom: 1em;
@@ -213,7 +215,7 @@ th {
 
 /* Form fields */
 label {
-  color: _palette(secondary);
+  color: _palette(mettxt);
   display: inline-block;
   line-height: 1.5;
   margin-bottom: 0.25em;
@@ -228,10 +230,10 @@ input[type="search"],
 input[type="url"],
 select,
 textarea {
-  font-family: _font(accent);
+  font-family: _font(body);
   background: _palette(bg);
   border: 1px solid _palette(border);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: none;
   box-sizing: border-box;
   color: _palette(primary);
@@ -308,24 +310,24 @@ textarea {
 
 /* Placeholder text */
 ::-webkit-input-placeholder {
-  color: _palette(meta);
+  color: _palette(txtmet);
 }
 
 ::-moz-placeholder {
-  color: _palette(meta);
+  color: _palette(txtmet);
   opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: _palette(meta);
+  color: _palette(txtmet);
 }
 
 ::-ms-input-placeholder {
-  color: _palette(meta);
+  color: _palette(txtmet);
 }
 
 ::placeholder {
-  color: _palette(meta);
+  color: _palette(txtmet);
 }
 
 button,
@@ -333,9 +335,9 @@ input[type="submit"],
 input[type="button"],
 input[type="reset"],
 .button {
-  background: _palette(blue10);
-  border: 2px solid _palette(accent);
-  border-radius: 30px;
+  background: _palette(secondary);
+  border: 1px solid _palette(accent);
+  border-radius: 15px;
   box-sizing: border-box;
   color: _palette(accent);
   display: inline-block;
@@ -355,7 +357,7 @@ input[type="reset"],
     background: transparent;
     border-color: _palette(accent);
     box-shadow: 0 0 1px 0.5em rgba(_palette(accent), 0.2);
-    color: _palette(secondary);
+    color: _palette(border);
     outline: 0;
   }
 }
@@ -411,7 +413,7 @@ img {
 .post-content,
 .block {
   img {
-    border-radius: 5px;
+    border-radius: 10px;
   }
 }
 

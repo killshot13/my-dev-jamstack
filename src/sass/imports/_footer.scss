@@ -30,7 +30,7 @@
     text-transform: uppercase;
 
     .copyright,
-    > a {
+    >a {
       font-size: 11px;
       margin-bottom: 0.5em;
       margin-right: 8px;
@@ -43,7 +43,7 @@
 
   .to-top {
     border: 0;
-    color: _palette(primary);
+    color: _palette(accent);
     display: none;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;

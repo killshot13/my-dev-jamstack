@@ -2,9 +2,9 @@
  * Site Header
  */
 .site-header {
-  background: _palette(blue20);
-  border-bottom: 1px solid _palette(border);
-  color: _palette(text20);
+  background: _palette(secondary);
+  border-bottom: 1px solid _palette(meta);
+  color: _palette(txtmet);
 }
 
 .site-header-inside {
@@ -49,18 +49,26 @@
 
   .avatar {
     border: 2px solid _palette(accent);
-    box-shadow: 0 0 1px 7px rgba(_palette(accent), 0.2);
+    box-shadow: 0 0 1px 8px rgba(_palette(accent), 0.2);
     border-radius: 100%;
     display: block;
     -o-object-fit: cover;
     object-fit: cover;
     height: 45px;
     width: 45px;
+
+    &:hover {
+      border: 1px solid _palette(accent);
+      box-shadow: 0 0 1px 6px rgba(_palette(accent), 0.2);
+      -webkit-transition: 0.3s ease;
+      transition: 0.3s ease;
+    }
+
   }
 }
 
 .site-title {
-  color: _palette(secondary);
+  color: _palette(txth10);
   font-size: 1.11111rem;
   font-weight: bold;
   line-height: 1;
@@ -73,6 +81,7 @@
 }
 
 .site-description {
+  color: _palette(txtp20);
   font-size: 12px;
   line-height: 1;
   margin: 0.25em 0 0;
@@ -84,7 +93,7 @@
 }
 
 .site-navigation {
-  background: #fff;
+  background: _palette(secondary);
   bottom: 0;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
@@ -135,7 +144,7 @@
   &.menu-button {
     padding: 1em 0;
 
-    & + .menu-button {
+    &+.menu-button {
       border-top: 0;
       padding-top: 0;
     }
@@ -144,6 +153,12 @@
   .button {
     padding-bottom: 0.54286em;
     padding-top: 0.54286em;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: _palette(accent);
+    }
   }
 
   a {
@@ -196,42 +211,9 @@
         background: _palette(accent);
         border-color: _palette(accent);
         box-shadow: 0 0 1px 5px rgba(_palette(accent), 0.2);
-        color: #fff;
+        color: _palette(secondary);
       }
     }
-  }
-}
-
-.site-header.dark {
-  background: _palette(secondary);
-  border: 0;
-  color: _palette(meta);
-
-  .site-navigation {
-    background: _palette(secondary);
-  }
-
-  .site-title {
-    color: #fff;
-  }
-
-  .menu-item {
-    .button {
-      &:hover,
-      &:focus,
-      &:active {
-        color: _palette(accent);
-      }
-    }
-  }
-
-  .menu-item,
-  .social-links .button-icon {
-    border-color: _palette(primary);
-  }
-
-  .social-links .button-icon:hover {
-    border-color: _palette(accent);
   }
 }
 
@@ -350,6 +332,7 @@
       width: 100%;
       z-index: 9997;
     }
+
     .site-navigation {
       right: 0;
       -webkit-transition: right 0.3s ease-in-out;
