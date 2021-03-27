@@ -113,9 +113,12 @@ pre {
 }
 
 blockquote {
-  border-bottom: 1px solid _palette(secondary);
-  border-top: 3px solid _palette(secondary);
-  font-size: 1.88889em;
+  font-family: _font(body);
+  color: _palette(txtp10);
+  border-left: 10px solid _palette(accent);
+  border-bottom: 4px solid _palette(primary);
+  border-top: 4px solid _palette(primary);
+  font-size: 1.11111em;
   line-height: 1.25;
   margin: 2rem 0;
   padding-bottom: 1.66667rem;
@@ -126,7 +129,8 @@ blockquote {
   }
 
   p {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.66667em;
+    padding-left: 1.33333rem;
 
     &:last-child {
       margin-bottom: 0;
@@ -135,7 +139,7 @@ blockquote {
 
   small,
   cite {
-    color: _palette(txtmet);
+    color: _palette(acchyp);
     display: block;
     font-size: 0.52941em;
     font-style: normal;
@@ -471,6 +475,10 @@ img {
   }
 
   blockquote {
-    font-size: 1.55556em;
+    background: _palette(secondary);
+    border-left: 10px solid _palette(acchyp);
+    margin: 1.5em 10px;
+    padding: 1em 10px .1em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
   }
 }
