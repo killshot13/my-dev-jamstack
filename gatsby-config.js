@@ -2,8 +2,11 @@ const siteMetadata = require('./site-metadata.json')
 
 module.exports = {
 	pathPrefix: '/',
-	siteMetadata: siteMetadata,
+	siteMetadata: {
+		siteUrl: `https://rehnert.co`,
+	},
 	plugins: [
+		`gatsby-plugin-advanced-sitemap`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-source-data`,
 		`gatsby-transformer-remark`,

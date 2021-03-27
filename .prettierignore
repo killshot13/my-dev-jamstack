@@ -65,5 +65,15 @@ public
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity
+
+# SASS/SCSS files
+src/sass/
+
+# Markdown files
+src/pages/
+LICENSE.md
+README.md
+stackbit.yaml

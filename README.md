@@ -55,6 +55,7 @@ You can [create a site](https://app.stackbit.com/create?theme=https://github.com
 
         npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/60323df295aa610015b59f66 --stackbit-api-key=STACKBIT_API_KEY
 
+
 1. Start the Gatsby local development server:
 
         npm run develop

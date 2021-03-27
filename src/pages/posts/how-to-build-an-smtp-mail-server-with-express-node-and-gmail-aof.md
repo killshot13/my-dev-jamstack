@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--U2LLP4Iw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/de3p75v2w0yfb2sxcgpy.jpg
 comments_count: 5
-positive_reactions_count: 226
+positive_reactions_count: 227
 tags:
   - tutorial
   - node
