@@ -1,13 +1,14 @@
 /**
  * Sections
  */
+
 .block {
   margin-bottom: 5em;
 }
 
 .block-title {
   &.underline {
-    color: _palette(metatxt);
+    color: _palette(border);
     font-size: 1em;
     letter-spacing: 0.11111em;
     margin-bottom: 1.66667rem;
@@ -46,13 +47,16 @@
 
   .block-title {
     font-size: 2.66667em;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-top: 0;
+    padding-bottom: 0.33333em;
+    border-bottom: 3px solid _palette(accent);
   }
 
   .block-content {
     font-size: 1.33333em;
     line-height: 1.5;
+    text-align: center;
   }
 }
 

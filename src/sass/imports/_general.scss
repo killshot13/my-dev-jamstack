@@ -1,6 +1,7 @@
 /**
  * General
  */
+
 html {
   font-size: 112.5%;
   height: 100%;
@@ -48,6 +49,7 @@ h6 {
 
 h1 {
   font-size: 2.22222em;
+  text-align: center;
 }
 
 h2 {
@@ -83,8 +85,8 @@ address {
 
 mark,
 ins {
-  background: #fff9c6;
-  color: _palette(secondary);
+  background: _palette(secondary);
+  color: _palette(txtmet);
   padding: 0 3px;
   text-decoration: none;
 }
@@ -97,10 +99,10 @@ pre {
 }
 
 pre {
-  background-color: _palette(bg);
+  background-color: _palette(secondary);
   border: 1px solid _palette(border);
   border-radius: 10px;
-  color: _palette(secondary);
+  color: _palette(txtmet);
   margin: 1.66667rem 0;
   overflow: auto;
   padding: 1.33333em;
@@ -113,12 +115,13 @@ pre {
 }
 
 blockquote {
-  font-family: _font(body);
-  color: _palette(txtp10);
   border-left: 10px solid _palette(accent);
   border-bottom: 4px solid _palette(primary);
   border-top: 4px solid _palette(primary);
+  color: _palette(txtp20);
+  font-family: _font(quote);
   font-size: 1.11111em;
+  font-weight: 100;
   line-height: 1.25;
   margin: 2rem 0;
   padding-bottom: 1.66667rem;
@@ -193,7 +196,7 @@ table {
 }
 
 caption {
-  color: _palette(txtmet);
+  color: _palette(acchyp);
   font-size: 0.88889rem;
   font-style: normal;
   margin-bottom: 1em;
@@ -396,6 +399,7 @@ input[type="reset"],
 }
 
 /* Videos, audios and embeds */
+
 embed,
 iframe,
 object,
@@ -476,7 +480,7 @@ img {
 
   blockquote {
     background: _palette(secondary);
-    border-left: 10px solid _palette(acchyp);
+    border-left: 10px solid _palette(accent);
     margin: 1.5em 10px;
     padding: 1em 10px .1em 10px;
     quotes: "\201C""\201D""\2018""\2019";

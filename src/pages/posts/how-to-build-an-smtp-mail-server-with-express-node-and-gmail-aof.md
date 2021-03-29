@@ -33,6 +33,7 @@ The full codebase can be viewed here:
 
 
 ---
+
 ## Features
 
 Before we start coding, we should quantify the expected functionality of our Express mail server. We can always refer back to this list later if confusion develops.
@@ -45,11 +46,11 @@ Before we start coding, we should quantify the expected functionality of our Exp
 
 4. *Construct a transport function* with Nodemailer in preparation for delivery.
 
-4. *Obtain authorization* from Gmail using credentials stored in the server.
+5. *Obtain authorization* from Gmail using credentials stored in the server.
 
-5. *Call the transport function,* prompting Nodemailer to handoff the email object to the Gmail SMTP Server for delivery.
+6. *Call the transport function*, prompting Nodemailer to handoff the email object to the Gmail SMTP Server for delivery.
 
-6. *Request confirmation* of successful delivery and return an error message if not received.
+7. *Request confirmation* of successful delivery and return an error message if not received.
 
 Upon completion, we will have the perfect backend for processing contact forms. Alternatively, our server will also provide a solid base to build a full-stack MERN app with plenty of functionality.
 
@@ -60,6 +61,7 @@ The production version of the server we are building today powers the backend of
 ![Screenshot of the source code on GitHub](https://dev-to-uploads.s3.amazonaws.com/i/6lgbz7trbzbw34ris8jb.jpg)
 
 ---
+
 ## Prerequisites
 
 * A basic understanding of fundamental programming concepts and familiarity with at least one server-side programming language such as [
@@ -76,25 +78,25 @@ The production version of the server we are building today powers the backend of
 
 * [Node.js](https://nodejs.org/en/download) and [npm](https://www.npmjs.com/get-npm) locally installed. (Current LTS version preferred)
 
----
-
-> Some developers, including myself, prefer to use [nvm]
-> (https://github.com/nvm-sh/nvm) or [nvm-windows]
-> (https://github.com/coreybutler/nvm-windows) to simplify Node version management, which is perfectly fine. For further reference you can check out also [How To Use Multiple Node Versions With NVM On MacOS - Node Version Manager](https://daily.dev/posts/how-to-use-multiple-node-versions-with-nvm-on-macos-node-version-manager)
+>Some developers, including myself, prefer to use [nvm](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows) to simplify Node version management, which is perfectly fine.
+>
+>For further reference you can check out also [How To Use Multiple Node Versions With NVM On MacOS - Node Version Manager](https://daily.dev/posts/how-to-use-multiple-node-versions-with-nvm-on-macos-node-version-manager)
 
 ---
 
 ## Development
-### Part 1. _Dependencies_
+### _Part 1. Dependencies_
 
-### *The moment has arrived! Time to write some code.*
+#### *The moment has arrived! Time to write some code.*
 Begin with these terminal commands to make an empty directory wherever you wish to store your server's local version and create the first file using npm.
 
 ---
 
-    mkdir smtp-email-server
-    cd smtp-email-server
-    npm init
+```shell
+mkdir smtp-email-server
+cd smtp-email-server
+npm init
+```
 
 ---
 
@@ -110,19 +112,21 @@ Now we need to add the required dependencies (npm packages) to our project. Run 
 
 ---
 
-    npm install express nodemailer morgan dotenv
+```bash
+npm install express nodemailer morgan dotenv
+```
 
 ---
 
 Let's glance at a brief overview of each package.
 
-* *Express* is a minimal and flexible Node.js web application framework that provides a robust set of features.
+* **Express** is a minimal and flexible Node.js web application framework that provides a robust set of features.
 
-* *Nodemailer* is a module designed to allow Node.js applications to send emails securely and efficiently.
+* **Nodemailer** is a module designed to allow Node.js applications to send emails securely and efficiently.
 
-* *Morgan* is named after Dexter (a show you should not watch until completion) and provides HTTP request logger middleware for Node.js.
+* **Morgan** is named after Dexter (a show you should not watch until completion) and provides HTTP request logger middleware for Node.js.
 
-* *dotenv* is a zero-dependency module that loads environment variables from a 
+* **dotenv** is a zero-dependency module that loads environment variables from a 
 `.env`
  file into 
 `process.env`
@@ -130,7 +134,7 @@ Let's glance at a brief overview of each package.
 
 ---
 
-### Part 2. _Routes_
+### _Part 2. Routes_
 Let's begin by creating a 
 `routes`
  folder containing 
@@ -139,7 +143,9 @@ Let's begin by creating a
 
 ---
 
-    mkdir routes && cd routes && touch routes.js
+```bash
+mkdir routes && cd routes && touch routes.js
+```
 
 ---
 
@@ -149,12 +155,13 @@ Open
 
 ---
 
-    require('dotenv').config()
-
-    // routes.js
-    const router = require('express').Router()
-    const path = require('path')
-    const nodemailer = require('nodemailer')
+```javascript
+require("dotenv").config();
+// routes.js
+const router = require("express").Router();
+const path = require("path");
+const nodemailer = require("nodemailer");
+```
 
 ---
 
@@ -166,18 +173,19 @@ Our next order of work will involve setting up authentication using our Gmail ac
 
 ---
 
-    const transport = {
-        //this is the authentication for sending email.
-	host: 'smtp.gmail.com',
-	port: 465,
-	secure: true, // use TLS
-	//create a .env file and define the process.env variables 
-        with your credentials.
-	auth: {
-		user: process.env.SMTP_TO_EMAIL,
-		pass: process.env.SMTP_TO_PASSWORD,
-	},
-    }
+```javascript
+const transport = {
+    //this is the authentication for sending email.
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, // use TLS
+    /* create a .env file and define your credentials. */
+    auth: {
+        user: process.env.SMTP_TO_EMAIL,
+        pass: process.env.SMTP_TO_PASSWORD,
+    },
+};
+```
 
 ---
 
@@ -185,16 +193,19 @@ Remember the transport function we mentioned earlier? In this step, we will cons
 
 ---
 
-    const transporter = nodemailer.createTransport(transport)
-        transporter.verify((error, success) => {
-	if (error) {
-		//if error happened code ends here
-		console.error(error)
-	} else {
-		//this means success
-		console.log('Ready to send mail!')
-	}
-    })
+```javascript
+// call the transport function
+const transporter = nodemailer.createTransport(transport);
+transporter.verify((error, success) => {
+    if (error) {
+        //if error happened code ends here
+        console.error(error);
+    } else {
+        //this means success
+        console.log("Ready to send mail!");
+    }
+})
+```
 
 ---
 
@@ -208,43 +219,33 @@ Finally, we call the
 
 ---
 
-    router.get('/', (req, res, next) => {
-	res.status(200).json({ msg: 'Working' })
-    })
-
----
-
-    router.post('/', (req, res, next) => {
-	    //make mailable object
-	    const mail = {
-		from: process.env.SMTP_FROM_EMAIL,
-		to: process.env.SMTP_TO_EMAIL,
-		subject: 'New Contact Form Submission',
-		text: 
-`
-          from:
-          ${req.body.name}
-
-          contact details
-          email: ${req.body.email}
-          phone: ${req.body.tel}
-
-          message:
-          ${req.body.message}`
-,
-	    }
-	    transporter.sendMail(mail, (err, data) => {
-		    if (err) {
-			    res.json({
-				    status: 'fail',
-			    })
-		    } else {
-			    res.json({
-				    status: 'success',
-			    })
-		    }
+```javascript
+router.get('/', (req, res, next) => {
+    res.status(200).json({ msg: 'Working' })
+})
+router.post('/', (req, res, next) => {
+    //make mailable object
+    const mail = {
+	from: process.env.SMTP_FROM_EMAIL,
+	to: process.env.SMTP_TO_EMAIL,
+	subject: 'New Contact Form Submission',
+	text: `
+from: ${req.body.name} contact details email: ${req.body.email} phone: ${req.body.tel} message: ${req.body.message}
+`,
+    }
+    transporter.sendMail(mail, (err, data) => {
+	if (err) {
+	    res.json({
+	        status: 'fail',
 	    })
+	    } else {
+	    res.json({
+	        status: 'success',
+	    })
+	}
     })
+})
+```
 
 ---
 
@@ -252,27 +253,26 @@ The last block of code in this file instructs Express to use the routes we have 
 
 ---
 
-    // Answer API requests.
-    router.use('/api', function (req, res) {
-	    res.set('Content-Type', 'application/json')
-	    res.send('{"message":"Hello from the custom 
-    server!"}')
-    })
-
-    // All remaining requests return the React app, so it can 
-    handle routing.
-    router.use('*', function (request, response) {
-	    response.sendFile(path.resolve(__dirname, '/react- 
+```javascript
+// Answer API requests.
+router.use('/api', function (req, res) {
+    res.set('Content-Type', 'application/json')
+    res.send('{"message":"Hello from the custom server!"}')
+})
+/* All remaining requests return the React app, so it can 
+handle routing. */
+router.use('*', function (request, response) { 
+    response.sendFile(path.resolve(__dirname, '/react- 
     ui/build', 'index.html'))
-    })
-
-    module.exports = router
+})
+module.exports = router
+```
 
 ---
 
-> NOTE: _If you are unfamiliar with 
+>NOTE: _If you are unfamiliar with 
 `process.env`
- or merely need a > refresher, this Codeburst article provides a splendid reference point._
+ or merely need a refresher, this Codeburst article provides a splendid reference point._ 
 
 
 <iframe class="liquidTag" src="https://dev.to/embed/medium?args=https%3A%2F%2Fcodeburst.io%2Fprocess-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7" style="border: 0; width: 100%;"></iframe>
@@ -290,10 +290,12 @@ Here we are just ensuring everything runs smoothly. I could write an entire arti
 Let's start by defining some initial requirements.
 
 ---
- 
-    const express = require('express')
-    const cluster = require('cluster')
-    const numCPUs = require('os').cpus().length
+
+```javascript
+const express = require('express')
+const cluster = require('cluster')
+const numCPUs = require('os').cpus().length
+```
 
 ---
 
@@ -301,29 +303,24 @@ Now we should check the environment to see if we are running in production. If s
 
 ---
 
-    const isDev = process.env.NODE_ENV !== 'production'
-
-    // Multi-process to utilize all CPU cores.
-    if (!isDev && cluster.isMaster) {
-	    console.error(
-`Node cluster master ${process.pid} is 
-    running`
-)
-
-	    // Fork workers.
-	    for (let i = 0; i < numCPUs; i++) {
-		    cluster.fork()
-	    }
-
-	    cluster.on('exit', (worker, code, signal) => {
-		    console.error(
-			    
-`Node cluster worker 
-    ${worker.process.pid} exited: code ${code}, signal ${signal}`
-
-		    )
-	    })
+```javascript
+const isDev = process.env.NODE_ENV !== 'production'
+/* Multi-process to utilize all CPU cores. */
+if (!isDev && cluster.isMaster) {
+    console.error(`
+Node cluster master ${process.pid} is running
+`)
+    // Fork workers.
+    for (let i = 0; i < numCPUs; i++) {
+	cluster.fork()
     }
+cluster.on('exit', (worker, code, signal) => {
+    console.error(`
+Node cluster worker ${worker.process.pid} exited: code ${code}, signal ${signal}
+`)
+    })
+}
+```
 
 ---
 
@@ -335,51 +332,40 @@ We wrap it up with some error logging for the development environment, and voila
 
 ---
 
-    else {
-         const app = express()
-	 const morgan = require('morgan')
-	 const path = require('path')
-
-	 const PORT = process.env.PORT || 5000
-
-	 // Priority serve any static files.
-	 // Replace the example to connect to your frontend.
-	 app.use(express.static(path.join(__dirname, 
-         '/example/frontend.js')))
-
-	 // dev middleware
-	 app.use(morgan('dev'))
-
-	 // configure body parser for AJAX requests
-	 app.use(express.urlencoded({ extended: false }))
-	 app.use(express.json())
-
-	 const routes = require('./routes/routes')
-
-	 // after all middleware functions
-	 app.use('/', routes)
-
-	 app.listen(PORT, function () {
-		console.error(
-			
-`Node ${
-				isDev ? 'dev server' : 'cluster 
-         worker ' + process.pid
-			}: listening on port ${PORT}`
-
-		)
-	 })
-    }
+```javascript
+else {
+     const app = express()
+     const morgan = require('morgan')
+     const path = require('path')
+     const PORT = process.env.PORT || 5000
+     /* Priority serve any static files. */
+     /* Replace the example to connect to your frontend. */
+     app.use(express.static(path.join(__dirname, 
+     '/example/frontend.js')))
+     // dev middleware
+     app.use(morgan('dev'))
+     /* configure body parser for AJAX requests */
+     app.use(express.urlencoded({ extended: false }))
+     app.use(express.json())
+     const routes = require('./routes/routes')
+     /* after all middleware functions */
+     app.use('/', routes)
+     app.listen(PORT, function () { 
+     console.error(`
+Node ${isDev ? 'dev server' : 'cluster worker' 
+     + process.pid}:
+     listening on port ${PORT}
+`)
+})
+```
 
 ---
 
 ### *SMTP Email Server is complete! Congratulations!*
 
----
+>NOTE: _If you encounter difficulty with the authentication process, read this Google Support documentation! It will save you hours of debugging and Excedrin._
 
-> NOTE: _If you encounter difficulty with the authentication
-> process, read this Google Support documentation! It will save
-> you hours of debugging and Excedrin._
+---
 
 
 <iframe class="liquidTag" src="https://dev.to/embed/twitter?args=1350970875835777026" style="border: 0; width: 100%;"></iframe>
@@ -403,7 +389,7 @@ Feel free to clone the source code and explore your own methods of implementatio
 
 Don't forget to 💖 this article and leave a 💭. If you're feeling extra generous, please click my name below to 🎆subscribe🎇!
 
-  -- killshot13
+-- killshot13
 
 ---
 

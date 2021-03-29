@@ -13,6 +13,7 @@
 .post-title {
   font-size: 2.66667em;
   margin: 0 0 1.66667rem;
+  text-align: center;
 
   a {
     border: 0;
@@ -38,7 +39,7 @@
 }
 
 .post-meta {
-  color: _palette(mettxt);
+  color: _palette(txtp20);
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.5;
