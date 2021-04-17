@@ -19,7 +19,7 @@
 		"chokidar": "^3.4.0",
 		"classnames": "^2.2.6",
 		"core-js": "^3.9.1",
-		"debug": "^4.3.1",
+		"debug": "^4.3.2",
 		"documentation": "^13.2.0",
 		"fs-extra": "^7.0.1",
 		"gatsby": "^2.32.11",
