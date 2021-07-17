@@ -6,7 +6,7 @@ excerpt: "a guide to releasing your first npm\_package               Introductio
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--aGL9eipc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jwut6pn4vr6qfi5lno74.png
 comments_count: 0
-positive_reactions_count: 4
+positive_reactions_count: 5
 tags:
   - npm
   - tutorial

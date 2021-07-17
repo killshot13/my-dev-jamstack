@@ -7,7 +7,7 @@ excerpt: >-
   nearly a year...
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--mS00IFfr--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/73suok4xhx023jic9t21.jpg
-comments_count: 2
+comments_count: 3
 positive_reactions_count: 5
 tags:
   - github
