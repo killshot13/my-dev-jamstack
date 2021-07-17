@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--U2LLP4Iw--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/de3p75v2w0yfb2sxcgpy.jpg
 comments_count: 5
-positive_reactions_count: 227
+positive_reactions_count: 233
 tags:
   - tutorial
   - node
@@ -24,7 +24,7 @@ Recently I had the opportunity to develop and integrate an SMTP Email Server int
 
 We'll primarily be using Express and Node to create this server. We’ll also integrate Nodemailer to construct a mailable object and Gmail SMTP Server to deliver our emails free of charge.
 
-The full codebase can be viewed here:
+The complete codebase can be viewed here:
 
 ---
 
@@ -48,7 +48,7 @@ Before we start coding, we should quantify the expected functionality of our Exp
 
 5. *Obtain authorization* from Gmail using credentials stored in the server.
 
-6. *Call the transport function*, prompting Nodemailer to handoff the email object to the Gmail SMTP Server for delivery.
+6. *Call the transport function*, prompting Nodemailer to hand off the email object to the Gmail SMTP Server for delivery.
 
 7. *Request confirmation* of successful delivery and return an error message if not received.
 
@@ -80,7 +80,7 @@ The production version of the server we are building today powers the backend of
 
 >Some developers, including myself, prefer to use [nvm](https://github.com/nvm-sh/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows) to simplify Node version management, which is perfectly fine.
 >
->For further reference you can check out also [How To Use Multiple Node Versions With NVM On MacOS - Node Version Manager](https://daily.dev/posts/how-to-use-multiple-node-versions-with-nvm-on-macos-node-version-manager)
+>For further reference, you can check out also [How To Use Multiple Node Versions With NVM On MacOS - Node Version Manager](https://daily.dev/posts/how-to-use-multiple-node-versions-with-nvm-on-macos-node-version-manager)
 
 ---
 
