@@ -13,10 +13,6 @@ sections:
     title: About
     content: >-
       My name is Michael, and I am a full-stack web developer. I empower my customers, clients, and the companies I work for to establish and secure their online interests. From web design to cloud encryption, "My Business Is You!"
-    actions:
-      - label: View Portfolio
-        url: /portfolio
-        style: button
   - section_id: recent-posts
     type: section_posts
     title: Recent Posts
