@@ -20,16 +20,6 @@
 				"style": "link"
 			},
 			{
-				"label": "Portfolio",
-				"url": "/portfolio/",
-				"style": "link"
-			},
-			{
-				"label": "About",
-				"url": "/about/",
-				"style": "link"
-			},
-			{
 				"label": "Contact",
 				"url": "/contact/",
 				"style": "link"

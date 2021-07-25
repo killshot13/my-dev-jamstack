@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "../my-dev-jamstack"
+		},
+		{
+			"path": "../mdj-local-store"
 		}
 	],
 	"settings": {}
