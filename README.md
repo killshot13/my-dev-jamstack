@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/58e2b3cb-13d2-4937-9c44-681fb76c7cce/deploy-status)](https://app.netlify.com/sites/rehnert/deploys)
 
-<img src="https://themes.stackbit.com/images/fresh-demo-1024x768.png" width="600">
+<img src="https://github.com/killshot13/my-dev-jamstack/blob/master/static/images/code-develop-engineer-github-repo-image.jpg" width="600">
 
 This is a second-generation JAMSTACK, with better performance than even its visionaries could have imagined.
 
