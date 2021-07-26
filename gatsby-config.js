@@ -6,15 +6,6 @@ module.exports = {
 		siteUrl: `https://rehnert.co`,
 	},
 	plugins: [
-		`@stackbit/gatsby-plugin-menus`,
-		`gatsby-plugin-advanced-sitemap`,
-		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-sass`,
-		`gatsby-plugin-sharp`,
-		`gatsby-remark-images`,
-		`gatsby-source-data`,
-		`gatsby-source-filesystem`,
-		`gatsby-transformer-remark`,
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
@@ -35,15 +26,31 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `pages`,
-				path: `${__dirname}/src/pages`,
+				path: `${__dirname}/src/pages/`,
 			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `data`,
+				path: `${__dirname}/src/data/`,
+				ignore: [`**/\.*`], // ignore files starting with a dot
+			},
+		},
+		{
+			resolve: `gatsby-plugin-react-helmet`,
+			options: {},
 		},
 		{
 			resolve: `gatsby-plugin-sass`,
 			options: {},
 		},
 		{
-			resolve: `gatsby-remark-page-creator`,
+			resolve: `gatsby-plugin-sharp`,
+			options: {},
+		},
+		{
+			resolve: `gatsby-plugin-advanced-sitemap`,
 			options: {},
 		},
 		{
@@ -53,5 +60,18 @@ module.exports = {
 				pageContextProperty: `menus`,
 			},
 		},
+	],
+}
+
+// In your gatsby-config.js
+module.exports = {
+	plugins: [
+		// You can have multiple instances of this plugin
+		// to read source nodes from different locations on your
+		// filesystem.
+		//
+		// The following sets up the Jekyll pattern of having a
+		// "pages" directory for Markdown files and a "data" directory
+		// for `.json`, `.yaml`, `.csv`.
 	],
 }
