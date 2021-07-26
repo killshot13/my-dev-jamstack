@@ -12,6 +12,7 @@ module.exports = {
 		`gatsby-plugin-sass`,
 		`gatsby-plugin-sharp`,
 		`gatsby-remark-images`,
+		`gatsby-source-data`,
 		`gatsby-source-filesystem`,
 		`gatsby-transformer-remark`,
 		{
