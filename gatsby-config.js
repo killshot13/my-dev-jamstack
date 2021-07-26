@@ -6,10 +6,14 @@ module.exports = {
 		siteUrl: `https://rehnert.co`,
 	},
 	plugins: [
+		`@stackbit/gatsby-plugin-menus`,
 		`gatsby-plugin-advanced-sitemap`,
 		`gatsby-plugin-react-helmet`,
-		`gatsby-source-data`,
+		`gatsby-plugin-sass`,
 		`gatsby-plugin-sharp`,
+		`gatsby-remark-images`,
+		`gatsby-source-filesystem`,
+		`gatsby-transformer-remark`,
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
