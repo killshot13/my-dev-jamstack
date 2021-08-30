@@ -37,13 +37,10 @@ I recently became aware of this information while completing a [Google Codelab](
 
 So basically, what Google is trying to say here is this. If this expression doesn't return true after plugging in the dimensions of your photos, then your site isn't serving high-resolution imagery. 
 
-
-<iframe class="liquidTag" src="https://dev.to/embed/katex?args=" style="border: 0; width: 100%;"></iframe>
-
- imgW * imgL >= sqrt(50,000)
-
-<iframe class="liquidTag" src="https://dev.to/embed/endkatex?args=" style="border: 0; width: 100%;"></iframe>
-
+<div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css">
+    <span>imgW * imgL >= sqrt(50,000)</span>
+</div>
 
 Let's simplify the math just a tad. We know that (2 x2 =4), so let's assign these values to a simple square.  Using the formula for a given square area, we can determine a 2in x2in square has a surface area of...surprise! Four square inches. 
 
@@ -69,7 +66,7 @@ Let's calculate what this means using three aspect ratios widely recommended as 
 
 We should be familiar by now with this type of calculation. After taking the square root of 50,000, we discover the minimum size for a high-resolution photo with a 1:1 ratio. 
 
-![244x244px](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xy31440930kyq6u43jbb.png)<figcaption>1:1 aspect ratio</figcaption>
+![244x244px](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xy31440930kyq6u43jbb.png) <figcaption>1:1 aspect ratio</figcaption>
 
 ---
 
@@ -77,7 +74,7 @@ We should be familiar by now with this type of calculation. After taking the squ
 
 Once the shape changes from a square to a rectangle, the calculation process becomes less granular and involves ratios and fractions. 
 
-![260x195px](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oal3mnzoshl83atypjx0.png)<figcaption>4:3 aspect ratio</figcaption>
+![260x195px](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oal3mnzoshl83atypjx0.png) <figcaption>4:3 aspect ratio</figcaption>
 
 ---
 
@@ -85,7 +82,7 @@ Once the shape changes from a square to a rectangle, the calculation process bec
 
 As you might assume, the larger the base ratio, the larger the gap between 50,000 and the actual size of our image. With a 16:9 aspect ratio, we cannot get closer than 51,984 square pixels without using decimal numbers. 
 
-![340x171px](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fhojuzzc8oxvvrcnew3m.png)<figcaption>16:9 aspect ratio</figcaption>
+![340x171px](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fhojuzzc8oxvvrcnew3m.png) <figcaption>16:9 aspect ratio</figcaption>
 
 ### Conclusion
 
@@ -93,7 +90,7 @@ So there you have it, folks, the 50,000 Rule demystified. Now I do not anticipat
 
 Still, it was fun to research and it also sets a concrete baseline for high-resolution imagery. I hope that you enjoyed reading this article and perhaps you have also learned something new today! 
 
-> *"For an image to be considered high-resolution when served on the Web, it must satisfy the 50,000px Rule."* 
+>*"For an image to be considered high-resolution when served on the Web, it must satisfy the 50,000px Rule."* 
 
 ---
 

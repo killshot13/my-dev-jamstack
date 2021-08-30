@@ -19,7 +19,7 @@ sections:
     posts_number: 2
     actions:
       - label: View Blog
-        url: blog/index.html
+        url: /blog/
         style: button
 seo:
   title: Code. Develop. Engineer.

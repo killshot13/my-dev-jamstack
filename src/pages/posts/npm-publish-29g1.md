@@ -2,7 +2,7 @@
 stackbit_url_path: posts/npm-publish-29g1
 title: npm-publish
 date: '2020-10-24T09:16:25.000Z'
-excerpt: "a guide to releasing your first npm\_package               Introduction   npm (node package m..."
+excerpt: "a guide to releasing your first npm\_package               Introduction   npm (node package..."
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--aGL9eipc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jwut6pn4vr6qfi5lno74.png
 comments_count: 0
@@ -19,6 +19,7 @@ template: post
 ---
 
 #### Introduction
+
 npm (node package manager) is the world's largest software registry. According to [the documentation](https://docs.npmjs.com/about-npm), npm consists of three distinct components:
 
 * the registry
@@ -41,9 +42,10 @@ The CLI provides the primary means of interacting with npm, including the publis
 (4). the [current stable version](https://github.com/npm/cli/releases/latest) of npm
 
 
+```shell
+    npm install npm@latest -g
 ```
-npm install npm@latest -g
-```
+
 
 ---
 
@@ -52,27 +54,29 @@ npm install npm@latest -g
 It is important to understand the two types of objects you can publish to the registry.
 
 #### How is a package defined?
-a). A folder containing a program described by a 
+
+* a). A folder containing a program described by a 
 `package.json`
  file.
-b). A gzipped tarball containing (a).
-c). A URL that resolves to (b).
-d). A 
+* b). A g-zipped tarball containing (a).
+* c). A URL that resolves to (b).
+* d). A 
 `<name>@<version>`
  that is published on the registry with (c).
-e). A 
+* e). A 
 `<name>@<tag>`
  that points to (d).
-f). A 
+* f). A 
 `<name>`
  that has a 
 `latest`
  tag satisfying (e).
-g). A 
+* g). A 
 `git`
  URL that, when cloned, results in (a).
 
 #### How is a module defined?
+
 Any file or directory within 
 `node_modules`
  that can be loaded by the Node.js 
@@ -97,7 +101,7 @@ A module can also be a package, but not all modules are packages by default.
 
 This parameter determines the visibility of your new npm package. For this article, it is assumed that you will elect to create a public package, but you may always reference the [documentation](https://docs.npmjs.com/creating-and-publishing-private-packages# publishing-private-packages) for more details.
 
-Scoped vs Unscoped
+#### Scoped vs Unscoped
 
 Here you will define whether you want to release your code completely to the public domain (unscoped) or publish the code within a retained namespace (scoped).
 
@@ -110,10 +114,10 @@ Here you will define whether you want to release your code completely to the pub
 The command line interprets your decision by how your package is named. I'll create examples based on my own npm account username.
 
 
-```
-PUBLIC/UNSCOPED: npm publish my-package
-PUBLIC/SCOPED: npm publish @killshot13_npm/my-package --access public
-PRIVATE/SCOPED: npm publish @killshot13_npm/my-package
+```shell
+    PUBLIC/UNSCOPED: npm publish my-package
+    PUBLIC/SCOPED: npm publish @killshot13_npm/my-package --access public
+    PRIVATE/SCOPED: npm publish @killshot13_npm/my-package
 ```
 
 
@@ -127,28 +131,26 @@ Since this article is about publishing our first npm package, I doubt these fact
 
 At last, the moment you have been waiting for! These four simple steps are what you will be using to publish your package or module to the registry.
 
-> WARNING: If you deviate from this path or omit one of these
-> steps, chances are you will encounter errors and spend a
-> considerable amount of time debugging your files.
+> WARNING: If you deviate from this path or omit one of these steps, chances are you will encounter errors and spend a considerable amount of time debugging your files.
 
 #### Create
 
 
-```
-mkdir my-package
-cd my-package
+```shell
+    mkdir my-package
+    cd my-package
 ```
 
 
 Now that you have a root directory, initiate git and npm.
 
 
-```
-git init
-git remote add origin git://YOUR URL HERE
-npm init
-// Follow the prompts to create a package.json file. 
-// Consider the conventions listed above when naming your package.
+```shell
+    git init
+    git remote add origin git://YOUR URL HERE
+    npm init
+    // Follow the prompts to create a package.json file. 
+    // Consider the conventions listed above when naming your package.
 ```
 
 
@@ -157,51 +159,53 @@ Now open the directory in your favorite code editor and add a
  file and the rest of your package code files.
 
 #### Review
+
 In this step, use whatever means are at your disposal to double-check your code for environmental variables, including passwords, API keys, and other sensitive data.
 
 If necessary, create the appropriate files and replace your existing code with default variables as needed to protect your secrets.
 
 
-```
-.gitignore | .npmignore | .env | PROCESS.ENV
+```shell
+    .gitignore | .npmignore | .env | PROCESS.ENV
 ```
 
 
-##### Test
-Almost there! Just one more quick (hopefully) thing to wrap up before you publish. To keep bugs out of the registry, especially when publishing publically, you should first test your package in your own environment.
+#### Test
+
+Almost there! Just one more quick (hopefully) thing to wrap up before you publish. To keep bugs out of the registry, especially when publishing publicly, you should first test your package in your own environment.
 
 Since you are already using the npm CLI, you can just run this command.
 
 
-```
-npm install my-package
-// Use the full path to your project directory.
+```shell
+    // Use the full path to your project directory.
+    npm install my-package
 ```
 
 
 If everything functions as designed, congratulations, you are ready to publish your first package!
 
 #### Publish
+
 This is the simplest and most satisfying step. Navigate back to the root directory of your npm package.
 
 
-```
-cd /path/to/package
+```shell
+    cd /path/to/package
 ```
 
 
 *Are you ready?*
 
 
-```
-npm publish my-package
+```shell
+    npm publish my-package
 ```
 
 
 If npm prints something that looks like this, you are golden!
 
-![screenshot of successful publish to npm action](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxvns1m1cm6wwx8se0go.png)
-Photo courtesy [Dev Community](https://dev.to/uf4no/npm-behind-the-scenes-and-publish-guide-4gi8)
+![screenshot of successful publish to npm action](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qxvns1m1cm6wwx8se0go.png) <figcaption>Photo courtesy [Dev Community](https://dev.to/uf4no/npm-behind-the-scenes-and-publish-guide-4gi8)</figcaption>
 
 ---
 
@@ -211,29 +215,27 @@ Once you
 `npm publish`
 , you *CANNOT* change your package name! Take a moment to solidify your choice of words. Try to keep package names short and descriptive. For an example of what not to do, imagine installing this npm package.
 
-> I pity the fool!
+>I pity the fool!
 
 
+```shell
+    npm install --save @teambit/staged-components.component-status-resolver
 ```
-npm install --save @teambit/staged-components.component-status-resolver
-```
 
 
-Sometimes, even with an unscoped public package, npm refuses to publish unless you include a flag. Add 
-`--access public`
- to your command and try again.
+Sometimes, even with an unscoped public package, npm refuses to publish unless you include a flag. Add <code>--access public</code> to your command and try again.
 
 
-```
-npm publish my-package --access public
+```shell
+    npm publish my-package --access public
 ```
 
 
 If you enabled 2FA when creating your npm account, you will have to provide the one-time token in your publish command.
 
 
-```
-npm publish my-package --otp=811486
+```shell
+    npm publish my-package --otp=811486
 ```
 
 

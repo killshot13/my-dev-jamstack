@@ -4,11 +4,11 @@ title: What is Pandoc?
 date: '2021-05-07T11:04:16.428Z'
 excerpt: >-
   Cover Image Credit: RFC: Designing Logo of Pandoc            Introduction  
-  Most developers have pro...
+  Most developers have...
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--jSMlLual--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7sb7honevh3jssa6m5bv.png
 comments_count: 0
-positive_reactions_count: 8
+positive_reactions_count: 10
 tags:
   - markdown
   - productivity
@@ -66,11 +66,7 @@ Then I grabbed the Windows installer for MikTex (one of many Pandoc engines) fro
 
 ---
 
-![markdown-to-pdf-pandoc-sample](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f2h5leq7n045ucq11kgp.jpg)
-<iframe class="liquidTag" src="https://dev.to/embed/collapsible?args=caption" style="border: 0; width: 100%;"></iframe>
- Before-and-after view when running the markdown-to-pdf command in Pandoc 
-<iframe class="liquidTag" src="https://dev.to/embed/endcollapsible?args=" style="border: 0; width: 100%;"></iframe>
-
+![markdown-to-pdf-pandoc-sample](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/f2h5leq7n045ucq11kgp.jpg) <figcaption>Before-and-after view when running the markdown-to-pdf command in Pandoc</figcaption>
 
 No further configuration was necessary, at least not from a functional point of view. However, Pandoc will let you customize certain behaviors at quite a granular level.
 
@@ -90,11 +86,7 @@ Since I am running Ubuntu Linux on WSL2, I opted to build from scratch to avoid 
 
 ---
 
-![markdown-to-html-pandoc.jpg](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pexrjudjth3ixhwq0bq7.jpg)
-<iframe class="liquidTag" src="https://dev.to/embed/collapsible?args=caption" style="border: 0; width: 100%;"></iframe>
- Before-and-after view when running the markdown-to-html command in Pandoc 
-<iframe class="liquidTag" src="https://dev.to/embed/endcollapsible?args=" style="border: 0; width: 100%;"></iframe>
-
+![markdown-to-html-pandoc.jpg](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pexrjudjth3ixhwq0bq7.jpg) <figcaption>Before-and-after view when running the markdown-to-html command in Pandoc</figcaption>
 
 ---
 
@@ -182,11 +174,7 @@ One should always consult the [official Pandoc documentation](https://pandoc.org
 
 ---
 
-![markdown-rendered-as-html-pandoc.jpg](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8nk2jw6wrh63f1k3jgth.jpg)
-<iframe class="liquidTag" src="https://dev.to/embed/collapsible?args=caption" style="border: 0; width: 100%;"></iframe>
- Pandoc can even apply custom styling when rendering HTML from Markdown 
-<iframe class="liquidTag" src="https://dev.to/embed/endcollapsible?args=" style="border: 0; width: 100%;"></iframe>
-
+![markdown-rendered-as-html-pandoc.jpg](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8nk2jw6wrh63f1k3jgth.jpg) <figcaption>Pandoc can even apply custom styling when rendering HTML from Markdown</figcaption>
 
 
 ```bash
@@ -210,7 +198,7 @@ One should always consult the [official Pandoc documentation](https://pandoc.org
 
 On a related note, if you find yourself working with markdown, HTML, PDF, or XML files quite often, you should check out a little project of mine called mdEditor for VS Code.
 
-The frameworks installed by mdEditor automate the configurations we just covered in such detail. Now you can generate file conversion with a simple keybinding or click in the command palette!
+The frameworks installed by mdEditor automate the configurations we just covered in such detail. Now you can generate file conversion with a simple key-binding or click in the command palette!
 
 
 <iframe class="liquidTag" src="https://dev.to/embed/github?args=killshot13%2FmdEditor%20no-readme" style="border: 0; width: 100%;"></iframe>
