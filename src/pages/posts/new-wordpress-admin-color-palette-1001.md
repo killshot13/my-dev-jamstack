@@ -26,15 +26,15 @@ Oh, and if you're a WP plugin developer, listen up because this applies to you t
 
 In his February post, [Standardization of WP-Admin colors in WordPress 5.7](https://make.wordpress.org/core/2021/02/23/standardization-of-wp-admin-colors-in-wordpress-5-7/), WP Core dev [Jb Audras](https://profiles.wordpress.org/audrasjb/) offered the following in-depth summary, and I quote:
 
-> _This is the first part of a larger project in cleaning up WordPress admin CSS. In WordPress 5.7, all colors used in the CSS are collapsed to one of 12 blues, greens, reds, and yellows, 13 grays, pure black, and pure white._
+>_This is the first part of a larger project in cleaning up WordPress admin CSS. In WordPress 5.7, all colors used in the CSS are collapsed to one of 12 blues, greens, reds, and yellows, 13 grays, pure black, and pure white._
 >
-> _This new streamlined color palette collapses all the colors that used to be in the WordPress source code down to seven core colors and a range of 56 shades that meet the WCAG 2.0 AA recommended contrast ratio against white or black._
+>_This new streamlined color palette collapses all the colors that used to be in the WordPress source code down to seven core colors and a range of 56 shades that meet the WCAG 2.0 AA recommended contrast ratio against white or black._
 >
-> _The colors are perceptually uniform from light to dark in each range, which means they start at white and get darker by the same amount with each step. Half the range has a 4.5 or higher contrast ratio against black, and the other half maintains the same contrast against white._
+>_The colors are perceptually uniform from light to dark in each range, which means they start at white and get darker by the same amount with each step. Half the range has a 4.5 or higher contrast ratio against black, and the other half maintains the same contrast against white._
 > 
-> _Standardizing on this set of colors will help contributors make consistent, accessible design decisions. Themes and Plugin developers are encouraged to use this new color palette for better consistency between their products and WordPress Core._
+>_Standardizing on this set of colors will help contributors make consistent, accessible design decisions. Themes and Plugin developers are encouraged to use this new color palette for better consistency between their products and WordPress Core._
 >
-> _Plugin authors that use the existing CSS Core classes should be all set up with the new color palette, as every Core class was updated accordingly._
+>_Plugin authors that use the existing CSS Core classes should be all set up with the new color palette, as every Core class was updated accordingly._
 
 Need/want more details? Check out the official [Design Handbook](https://make.wordpress.org/design/handbook/foundations/colors) or the CodePen palette shown below.
 

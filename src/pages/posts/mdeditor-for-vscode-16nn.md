@@ -101,42 +101,46 @@ The extensions will power the linting rules and Pandoc style guide within the wo
 
 Now, using this diagram, verify the file structure of your local installation of mdEditor is a rough match.
 
-**Tree View**
-_mdEditor_
-\+---.vscode
-    |       
-`settings.json`
 
-    |
-    +---md
-    |       
-`project1.md`
+```shell
+    **Tree View**
+    _mdEditor_
+    \+---.vscode
+         |       `
+settings.json
+`
+         |
+         +---md
+         |       `
+project1.md
+`
+         |       `
+project2.md
+`
+         |
+         +---styles
+         |       `
+style.css
+`
+         |       `
+syntax.md
+`
+         |
+         |`
+.markdownlint.json
+`
+         |`
+mdEditor.code-workspace
+`
+         |`
+README.md
+`
+         |`
+LICENSE
+`
+         \---
+```
 
-    |       
-`project2.md`
-
-    |
-    +---styles
-    |       
-`style.css`
-
-    |       
-`syntax.md`
-
-    |
-    |
-`.markdownlint.json`
-
-    |
-`mdEditor.code-workspace`
-
-    |
-`README.md`
-
-    |
-`LICENSE`
-
-    \---
 
 **NOTE: On Linux you must uncomment the 
 `pandoc.htmlOptString`

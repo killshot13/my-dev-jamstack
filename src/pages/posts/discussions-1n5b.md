@@ -28,11 +28,7 @@ First revealed during the live stream of GitHub's [Satellite Virtual 2020](https
 
 ---
 
-![View of a "GitHub Discussion"](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3oud35r5wy6wjbrwoe7v.jpeg)
-<iframe class="liquidTag" src="https://dev.to/embed/details?args=" style="border: 0; width: 100%;"></iframe>
- View of a "GitHub Discussion" 
-<iframe class="liquidTag" src="https://dev.to/embed/enddetails?args=" style="border: 0; width: 100%;"></iframe>
-
+![View of a "GitHub Discussion"](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3oud35r5wy6wjbrwoe7v.jpeg) <figcaption>View of a "GitHub Discussion"</figcaption>
 
 ---
 
@@ -44,11 +40,7 @@ Some prominent repositories, such as [Node.js](https://github.com/nodejs/node/di
 
 ---
 
-[![A view of "Discussions" from the Next.js repository](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p57qxyax6vzculdnu5th.jpeg)](https://github.com/vercel/next.js/discussions)
-<iframe class="liquidTag" src="https://dev.to/embed/details?args=" style="border: 0; width: 100%;"></iframe>
- [View of a "GitHub Discussion"](https://github.com/vercel/next.js/discussions) 
-<iframe class="liquidTag" src="https://dev.to/embed/enddetails?args=" style="border: 0; width: 100%;"></iframe>
-
+[![A view of "Discussions" from the Next.js repository](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p57qxyax6vzculdnu5th.jpeg)](https://github.com/vercel/next.js/discussions) <figcaption>[View of a "GitHub Discussion"](https://github.com/vercel/next.js/discussions)</figcaption>
 
 ---
 
@@ -69,11 +61,7 @@ Discussions also attempts to establish content moderation by **allowing top cont
 
 
 <iframe class="liquidTag" src="https://dev.to/embed/youtube?args=DbTWBP3_RbM" style="border: 0; width: 100%;"></iframe>
-
-<iframe class="liquidTag" src="https://dev.to/embed/details?args=" style="border: 0; width: 100%;"></iframe>
- Video provided courtesy of [Github](https://www.youtube.com/channel/UC7c3Kb6jYCRj4JO) and [Michelle Mannering](https://www.mishmanners.com/). 
-<iframe class="liquidTag" src="https://dev.to/embed/enddetails?args=" style="border: 0; width: 100%;"></iframe>
-
+ <figcaption>Video provided courtesy of [Github](https://www.youtube.com/channel/UC7c3Kb6jYCRj4JO) and [Michelle Mannering](https://www.mishmanners.com/)</figcaption>
 
 ---
 
@@ -86,11 +74,8 @@ The layout is almost identical to GitHub issues, allowing for creating any numbe
 Fortunately, **most of the configuration is already provided by a boilerplate template**. I found the default options to be well-balanced, sparing precious design time while still allowing customization.
 
 ---
-[![Getting Started with Discussions](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iayo2uvy9x6l4top9lp4.jpeg)](https://docs.github.com/en/discussions/quickstart)
-<iframe class="liquidTag" src="https://dev.to/embed/details?args=" style="border: 0; width: 100%;"></iframe>
- [Getting Started with Discussions](https://docs.github.com/en/discussions/quickstart) 
-<iframe class="liquidTag" src="https://dev.to/embed/enddetails?args=" style="border: 0; width: 100%;"></iframe>
 
+[![Getting Started with Discussions](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/iayo2uvy9x6l4top9lp4.jpeg)](https://docs.github.com/en/discussions/quickstart) <figcaption>[Getting Started with Discussions](https://docs.github.com/en/discussions/quickstart)</figcaption>
 
 ---
 
@@ -123,11 +108,7 @@ All figures were derived from beta testing conducted after the addition of Discu
 
 ---
 
-![Customization options for pinned Discussions](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fo3ashle60qa848i1gi4.jpeg)
-<iframe class="liquidTag" src="https://dev.to/embed/details?args=" style="border: 0; width: 100%;"></iframe>
- Customization options for pinned Discussions 
-<iframe class="liquidTag" src="https://dev.to/embed/enddetails?args=" style="border: 0; width: 100%;"></iframe>
-
+![Customization options for pinned Discussions](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fo3ashle60qa848i1gi4.jpeg) <figcaption>Customization options for pinned Discussions</figcaption>
 
 ---
 
