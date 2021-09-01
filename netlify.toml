@@ -2,9 +2,9 @@
 
 	base = "/"
 	publish = "/public"
-	command = "./stackbit-build.sh"
+	command = "yarn run build"
 
-[context.production]
+[enviroment.production]
   NODE_ENV = "production"
   NODE_VERSION = "14.17.x"
   NPM_VERSION = "7.20.x"
@@ -32,7 +32,7 @@
     pwa = 0.4
 
   # optional, deploy the lighthouse report to a path under your site
-  [plugins.inputs]
+  [plugins.inputs.audits]
     output_path = "reports/lighthouse/.html"
 
 [[plugins]]
