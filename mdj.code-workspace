@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../mdj-local-store"
+		}
+	],
+	"settings": {
+		"search.useIgnoreFiles": false,
+		"search.useGlobalIgnoreFiles": true
+	}
+}

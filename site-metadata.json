@@ -5,7 +5,7 @@
 		"title": "Michael Rehnert",
 		"tagline": "Full-Stack Web Developer | Data Analyst | Blogger | White-Hat Hacker | Entrepreneur | USAF Veteran",
 		"profile_img": "https://res.cloudinary.com/practicaldev/image/fetch/s--9h8J63Ee--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497515/85abf111-5f97-462e-8e83-fe46b3be008b.jpeg",
-		"profile_img_alt": "Author avatar",
+		"profile_img_alt": "The author himself",
 		"background": "dark",
 		"has_nav": true,
 		"nav_links": [
@@ -58,7 +58,7 @@
 		]
 	},
 	"footer": {
-		"content": "&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
+		"content": "&copy; 2021 Michael Rehnert & Stackbit. All rights reserved. This Jamstack site was created with <a href=\"https://www.stackbit.com/?utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">Stackbit</a>. Create yours <a href=\"https://app.stackbit.com/create?theme=fresh&utm_source=deployed-footer\" target=\"_blank\" rel=\"noopener\">now</a>",
 		"links": [
 			null,
 			{

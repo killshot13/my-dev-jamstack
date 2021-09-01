@@ -5,26 +5,18 @@ module.exports = {
 	siteMetadata: {
 		siteUrl: `https://rehnert.co`,
 	},
+	flags: {
+		PRESERVE_WEBPACK_CACHE: true,
+		DEV_SSR: true,
+		PRESERVE_FILE_DOWNLOAD_CACHE: true,
+	},
 	plugins: [
-		`gatsby-plugin-advanced-sitemap`,
 		`gatsby-plugin-react-helmet`,
+		`gatsby-plugin-remove-fingerprints`,
 		`gatsby-source-data`,
-		`gatsby-plugin-sharp`,
 		{
 			resolve: `gatsby-transformer-remark`,
-			options: {
-				plugins: [
-					{
-						resolve: `gatsby-remark-images`,
-						options: {
-							// It's important to specify the maxWidth (in pixels) of
-							// the content container as this plugin uses this as the
-							// base for generating different widths of each image.
-							maxWidth: 1200,
-						},
-					},
-				],
-			},
+			options: {},
 		},
 		{
 			resolve: `gatsby-source-filesystem`,
