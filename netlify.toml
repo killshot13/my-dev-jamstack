@@ -1,3 +1,57 @@
 [build]
-publish = "public"
-command = "./stackbit-build.sh"
+
+	base = "/"
+	publish = "/public"
+	command = "./stackbit-build.sh"
+
+[context.production]
+  NODE_ENV = "production"
+  NODE_VERSION = "14.17.x"
+  NPM_VERSION = "7.20.x"
+  NETLIFY_USE_YARN = true
+  YARN_VERSION = "1.22.x"
+  RUBY_VERSION = "2.7.x"
+  PHP_VERSION = "7.4.x"
+  PYTHON_VERSION = "3.8.10"
+  NETLIFY = true
+  _system_arch = "x64"
+  _system_version = "20.04"
+  INCOMING_HOOK_TITLE = "stackbit-build-hook"
+  INCOMING_HOOK_URL = "https://api.netlify.com/build_hooks/60323e85550410748717866c"
+  INCOMING_HOOK_BODY = "curl -X POST -d {} https://api.netlify.com/build_hooks/60323e85550410748717866c"
+
+[[plugins]]
+	package = "@netlify/plugin-lighthouse"
+
+  # optional, fails build when a category is below a threshold
+  [plugins.inputs.thresholds]
+    performance = 0.6
+    accessibility = 0.6
+    best-practices = 0.6
+    seo = 0.6
+    pwa = 0.4
+
+  # optional, deploy the lighthouse report to a path under your site
+  [plugins.inputs]
+    output_path = "reports/lighthouse/.html"
+
+[[plugins]]
+	package = "@netlify/plugin-gatsby"
+
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true
