@@ -7,7 +7,7 @@
 	"scripts": {
 		"develop": "gatsby develop",
 		"start": "yarn run develop",
-		"build": "echo 'started build' && yarn run stackbit && yarn install && yarn run compile && echo 'finished build' && yarn run serve",
+		"build": "echo 'started build' && yarn run stackbit && yarn install && yarn run compile && echo 'finished build'",
 		"stackbit": "npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/60323df295aa610015b59f66 --stackbit-api-key=STACKBIT_API_KEY",
 		"compile": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --prefix-paths --log-pages",
 		"serve": "gatsby serve"
