@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--yJdB-BrS--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vkgwk64iq98gw2hnnrnw.jpg
 comments_count: 2
-positive_reactions_count: 87
+positive_reactions_count: 88
 tags:
   - webdev
   - productivity

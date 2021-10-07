@@ -24,14 +24,17 @@ export default class Body extends React.Component {
 					<meta name='google' content='notranslate' />
 					<meta
 						name='description'
-						content={_.get(this.props, 'pageContext.frontmatter.seo.description', null) || ''}
+						content={
+							_.get(this.props, 'pageContext.frontmatter.seo.description', null) ||
+							''
+						}
 					/>
 					{_.get(this.props, 'pageContext.frontmatter.seo.robots', null) && (
 						<meta
 							name='robots'
 							content={_.join(
 								_.get(this.props, 'pageContext.frontmatter.seo.robots', null),
-								','
+								',',
 							)}
 						/>
 					)}
@@ -43,8 +46,12 @@ export default class Body extends React.Component {
 								_.get(this.props, 'pageContext.site.siteMetadata.domain', null) &&
 									(() => {
 										let domain = _.trim(
-											_.get(this.props, 'pageContext.site.siteMetadata.domain', null),
-											'/'
+											_.get(
+												this.props,
+												'pageContext.site.siteMetadata.domain',
+												null,
+											),
+											'/',
 										)
 										let rel_url = withPrefix(_.get(meta, 'value', null))
 										let full_url = domain + rel_url
@@ -63,12 +70,14 @@ export default class Body extends React.Component {
 									content={_.get(meta, 'value', null)}
 								/>
 							)
-						}
+						},
 					)}
 					{_.get(this.props, 'pageContext.site.siteMetadata.favicon', null) && (
 						<link
 							rel='icon'
-							href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))}
+							href={withPrefix(
+								_.get(this.props, 'pageContext.site.siteMetadata.favicon', null),
+							)}
 						/>
 					)}
 				</Helmet>

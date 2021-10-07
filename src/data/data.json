@@ -1,17 +1,17 @@
 {
-    "author": {
-        "name": "Michael R.",
-        "avatar": "https://res.cloudinary.com/practicaldev/image/fetch/s--mkPVL_Y4--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497515/85abf111-5f97-462e-8e83-fe46b3be008b.jpeg"
-    },
-    "social": {
-        "devto": {
-            "username": "killshot13"
-        },
-        "twitter": {
-            "username": "killsh0t13"
-        },
-        "github": {
-            "username": "killshot13"
-        }
-    }
+	"author": {
+		"name": "Michael R.",
+		"avatar": "https://res.cloudinary.com/practicaldev/image/fetch/s--fHAMlyKN--/c_fill,f_auto,fl_progressive,h_640,q_66,w_640/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497515/a67c9640-5cfc-457a-9e7e-9892cca29900.gif"
+	},
+	"social": {
+		"devto": {
+			"username": "killshot13"
+		},
+		"twitter": {
+			"username": "killsh0t13"
+		},
+		"github": {
+			"username": "killshot13"
+		}
+	}
 }

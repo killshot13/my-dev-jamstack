@@ -73,9 +73,6 @@ yarn-error.log
 src/sass/
 
 # Markdown files
-src/pages/
-LICENSE.md
-README.md
 stackbit.yaml
 stackbit-build.sh
 static/

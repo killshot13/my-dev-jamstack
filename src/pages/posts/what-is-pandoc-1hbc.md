@@ -8,7 +8,7 @@ excerpt: >-
 thumb_img_path: >-
   https://res.cloudinary.com/practicaldev/image/fetch/s--jSMlLual--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7sb7honevh3jssa6m5bv.png
 comments_count: 0
-positive_reactions_count: 10
+positive_reactions_count: 12
 tags:
   - markdown
   - productivity

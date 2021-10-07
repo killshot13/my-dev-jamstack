@@ -1,0 +1,54 @@
+{
+	"short_name": "C.D.E.",
+	"name": "Code.Develop.Engineer.",
+	"icons": [
+		{
+			"src": "/images/Code-Develop-Engineer-ICON.192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/images/Code-Develop-Engineer-ICON.512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "/?source=pwa",
+	"background_color": "#243B4A",
+	"display": "minimal-ui",
+	"scope": "/",
+	"theme_color": "#1CEDCA",
+	"shortcuts": [
+		{
+			"name": "C.D.E. Blog Articles",
+			"short_name": "Blog",
+			"description": "A curated selection of recent articles about web technologies & web application development",
+			"url": "/blog?source=pwa",
+			"icons": [
+				{
+					"src": "/images/Code-Develop-Engineer-ICON.192x192.png",
+					"type": "image/png",
+					"sizes": "192x192"
+				},
+				{
+					"src": "/images/Code-Develop-Engineer-ICON.512x512.png",
+					"type": "image/png",
+					"sizes": "512x512"
+				}
+			]
+		}
+	],
+	"description": "Web technologies and web application development articles & tutorials",
+	"screenshots": [
+		{
+			"src": "/images/Code-Develop-Engineer-PWA-Feature.720x540.png",
+			"type": "image/png",
+			"sizes": "540x720"
+		},
+		{
+			"src": "/images/Code_Develop_Engineer_Header.720x540.jpg",
+			"type": "image/jpg",
+			"sizes": "540x720"
+		}
+	]
+}

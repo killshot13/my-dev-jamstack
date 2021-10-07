@@ -10,6 +10,6 @@ echo "stackbit-build.sh: start build"
 npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/60323df295aa610015b59f66 --stackbit-api-key=STACKBIT_API_KEY
 
 # build site
-yarn run build
+npm run build
 
 echo "stackbit-build.sh: finished build"

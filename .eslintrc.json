@@ -1,0 +1,51 @@
+{
+	"root": true,
+	"env": {
+		"es6": true
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:prettier/recommended",
+		"prettier"
+	],
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"plugins": ["react"],
+	"rules": {
+		"no-restricted-imports": [
+			"error",
+			{
+				"patterns": ["@material-ui/*/*/*", "!@material-ui/core/test-utils/*"]
+			}
+		],
+		"curly": ["error", "all"],
+		"no-confusing-arrow": ["error", { "allowParens": false }],
+		"quotes": [
+			"error",
+			"single",
+			{ "avoidEscape": true, "allowTemplateLiterals": false }
+		],
+		"no-restricted-syntax": [
+			"error",
+			{
+				"selector": "SequenceExpression",
+				"message": "The comma operator is confusing and a common mistake. Don’t use it!"
+			}
+		]
+	},
+	"settings": {
+		"react": {
+			"createClass": "createReactClass",
+			"pragma": "React",
+			"fragment": "Fragment",
+			"version": "detect"
+		}
+	}
+}
