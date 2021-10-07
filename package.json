@@ -12,7 +12,7 @@
 	"scripts": {
 		"develop": "gatsby develop",
 		"start": "npm run develop",
-		"build": "echo 'started build' && npm run stackbit && npm install && npm run compile && echo 'finished build'",
+		"build": "npm install && npm run stackbit && npm run compile",
 		"stackbit": "npx @stackbit/stackbit-pull --stackbit-pull-api-url=https://api.stackbit.com/pull/60323df295aa610015b59f66 --stackbit-api-key=STACKBIT_API_KEY",
 		"compile": "cross-env GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --prefix-paths --log-pages",
 		"serve": "gatsby serve"
