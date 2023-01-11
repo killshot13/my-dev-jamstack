@@ -32,7 +32,7 @@
 		"gatsby-plugin-remove-fingerprints": "^0.0.2",
 		"gatsby-plugin-sass": "^4.13.0",
 		"gatsby-source-filesystem": "^2.3.10",
-		"gatsby-transformer-remark": "^2.8.14",
+		"gatsby-transformer-remark": "^5.25.1",
 		"graphql": "^14.7.0",
 		"js-yaml": "^3.12.2",
 		"lodash": "^4.17.21",
